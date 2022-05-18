@@ -11,14 +11,15 @@ function submit() {
 	let counter = parseInt(document.getElementById('min').value)
 	let numbers = ""
 
-	if (max > counter) {
+	//If statement to make sure max > min
+	if (max >= counter) {
 		//While loop for counter
 		while (counter <= max) {
 			numbers = numbers + counter + "<br>"
 			counter = counter + 1
 		}
 	} else {
-		numbers = "Please make sure your min is smaller then yout max<br>"
+		numbers = "Please make sure your min is smaller than your max"
 	}
 
 	//Displays answer
